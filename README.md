@@ -1,4 +1,7 @@
 # IHS-to-EPL Converter
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3fc0d558-6021-4070-8b3c-f29c482f02ec" width="610" height="540">
+</p>
 IHS-to-EPL Converter is a tool designed to convert IHS Auditory Brainstem Response (ABR) data (tested with SmartEP version 5.54.23) into the Eaton-Peabody Laboratory's in-house format. This conversion enables compatibility with the '[ABR Peak Analysis](https://github.com/EPL-Engineering/abr-peak-analysis)' software (version 1.10.1).
 
 ## Features
