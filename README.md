@@ -32,4 +32,4 @@ The converter applies a zero-phase second-order sections Butterworth bandpass fi
 
 ### Sample Dataset
 To test the application, download a sample dataset:
-[Sample Data - IHSPeakInfo Export.TXT]([https://github.com/thepyottlab/ASR-Inspect/blob/main/Sample%20Data%20-%20Kinder%20Scientific%20ASR%20Assay.csv](https://github.com/thepyottlab/IHS-to-EPL-Converter/blob/main/Sample%20Data%20-%20IHSPeakInfo%20Export.TXT))
+[Sample Data - IHSPeakInfo Export.TXT](https://github.com/thepyottlab/IHS-to-EPL-Converter/blob/main/Sample%20Data%20-%20IHSPeakInfo%20Export.TXT)
