@@ -16,8 +16,8 @@ IHS-to-EPL Converter is a tool designed to convert Intelligent Hearing Systems (
 The converter applies a zero-phase second-order sections Butterworth bandpass filter, which provides a maximally flat frequency response while ensuring numerical stability. The filter is applied forward and backward to eliminate phase distortion. Due to this bidirectional filtering, the effective filter order is doubled, resulting in an attenuation of -12 dB/octave per filter order rather than the default -6 dB/octave.
 
 ## Installation
-1. Go to the [Releases](https://github.com/TomNaber/IHS-to-EPL-Converter/releases) page.
-2. Download the `IHS-to-EPL Converter Setup.exe` file.
+1. Go to the [Releases](https://github.com/thepyottlab/IHS-to-EPL-Converter/releases) page.
+2. Download the `IHS-to-EPL_Converter_Setup.exe` file.
 3. Run the installer and follow the on-screen instructions.
 
 ## Usage
