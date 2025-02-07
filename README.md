@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a0c97d8a-1d67-4a06-8be8-6e7f5fee1632" width="753" height="663">
 </p>
-IHS-to-EPL Converter is a tool designed to convert IHS Auditory Brainstem Response (ABR) data (tested with SmartEP version 5.54.23) into the Eaton-Peabody Laboratory's in-house format. This conversion enables compatibility with the '[ABR Peak Analysis](https://github.com/EPL-Engineering/abr-peak-analysis)' software (version 1.10.1).
+IHS-to-EPL Converter is a tool designed to convert IHS Auditory Brainstem Response (ABR) data (tested with SmartEP version 5.54.23) into the Eaton-Peabody Laboratory's in-house format. This conversion enables compatibility with the [ABR Peak Analysis](https://github.com/EPL-Engineering/abr-peak-analysis) software (version 1.10.1).
 
 ## Features
 - Imports raw IHS data exported from IHSPeakInfo.
@@ -32,4 +32,4 @@ The converter applies a zero-phase second-order sections Butterworth bandpass fi
 
 ### Sample Dataset
 To test the application, download a sample dataset:
-[Sample Data - Exported IHS SmartEP files.csv](https://github.com/thepyottlab/ASR-Inspect/blob/main/Sample%20Data%20-%20Kinder%20Scientific%20ASR%20Assay.csv)
+[Sample Data - IHSPeakInfo Export.TXT]([https://github.com/thepyottlab/ASR-Inspect/blob/main/Sample%20Data%20-%20Kinder%20Scientific%20ASR%20Assay.csv](https://github.com/thepyottlab/IHS-to-EPL-Converter/blob/main/Sample%20Data%20-%20IHSPeakInfo%20Export.TXT))
