@@ -18,13 +18,13 @@ The converter applies a zero-phase second-order sections Butterworth bandpass fi
 3. Run the installer and follow the on-screen instructions.
 
 ## Usage
-1. Export ABR data using `IHSPeakInfo.exe` (default location: `C:\IHSPROGS\IHSPeakInfo.exe`). Ensure the **Extract Raw Data** option is enabled.
+1. Export ABR data using `IHSPeakInfo.exe` (default location: `C:\IHSPROGS\IHSPeakInfo.exe`). Ensure the 'Extract Raw Data' option is enabled.
 2. Open the IHS-to-EPL Converter application.
-3. Click **Select files** and choose the exported text file(s) from IHSPeakInfo.
-4. Set the **highpass** and **lowpass** cutoffs for bandpass filtering.
-5. Specify the **filter order** (-12 dB/octave per order).
-6. Click **OK** to process the files.
-7. Open the EPL ABR Peak Analysis software and set **Filter type** to **None** to prevent double filtering.
+3. Click 'Select files' and choose the exported text file(s) from IHSPeakInfo.
+4. Set the highpass and lowpass cutoffs for bandpass filtering.
+5. Specify the filter order (-12 dB/octave per order).
+6. Click 'OK' to process the files.
+7. Open the EPL ABR Peak Analysis software and set 'Filter type' to 'None' to prevent double filtering.
 8. Load the converted ABR files into EPL ABR Peak Analysis for analysis.
 
 ### Sample Dataset
