@@ -1,30 +1,32 @@
-# IHS-to-EPL-Converter
-IHS-to-EPL Converter can be used to convert IHS' Auditory Brainstem Response (ABR) format (confirmed working with SmartEP version 5.54.23) to the in-house format of the Eaton-Peabody Laboratory to be able to analyze the data with the '[ABR Peak Analysis](https://github.com/EPL-Engineering/abr-peak-analysis)' software (compatible with version 1.10.1).
+# IHS-to-EPL Converter
+IHS-to-EPL Converter is a tool designed to convert IHS Auditory Brainstem Response (ABR) data (tested with SmartEP version 5.54.23) into the Eaton-Peabody Laboratory's in-house format. This conversion enables compatibility with the '[ABR Peak Analysis](https://github.com/EPL-Engineering/abr-peak-analysis)' software (version 1.10.1).
 
 ## Features
-- Import raw IHS data that was exported from the IHS Peakinfo application and split it into separate files for each ID and each frequency that are compatible with the EPL ABR Peak Analysis software.
-- Set highpass and lowpass filter cutoffs.
-- Specify filter order.
-- Toggle whether the full trial (0-12 ms) is displayed or only the first half of the trial (0-6 ms).
-- Supports converting multiple files that were exported with IHS Peakinfo simultaneously.
+- Imports raw IHS data exported from IHSPeakInfo.
+- Splits data into separate files per ID and frequency for EPL ABR Peak Analysis compatibility.
+- Configurable highpass and lowpass filter cutoffs.
+- Adjustable filter order.
+- Option to display either the full trial or only the first half – i.e., only show the first 6 ms rather than the full 12 ms when using a 25 µs sampling period. The full ABR is always used for filtering.
+- Batch processing support for multiple files exported from IHSPeakInfo.
 
-## Filter characteristics
-The filter is a zero-phase second order sections butterworth bandpass filter, which is a maximally flat filter that is more numerically stable than direct-form representations, allowing for better filter performance at higher orders. The filter is applied forward and backward to counteract phase distortion that would be caused by a single pass of filtering. Because of the backward and forward filtering, filter order is doubled, so a filter order of 1 has -12 dB/octave attenuation rather than the default -6 dB/octave attenuation.
+## Filter Characteristics
+The converter applies a zero-phase second-order sections Butterworth bandpass filter, which provides a maximally flat frequency response while ensuring numerical stability. The filter is applied forward and backward to eliminate phase distortion. Due to this bidirectional filtering, the effective filter order is doubled, resulting in an attenuation of -12 dB/octave per filter order rather than the default -6 dB/octave.
 
 ## Installation
-1. Navigate to [Releases](https://github.com/TomNaber/IHS-to-EPL-Converter/releases).
-2. Download the 'IHS-to-EPL Converter Setup.exe' file.
-3. Run the installer.
+1. Go to the [Releases](https://github.com/TomNaber/IHS-to-EPL-Converter/releases) page.
+2. Download the `IHS-to-EPL Converter Setup.exe` file.
+3. Run the installer and follow the on-screen instructions.
 
 ## Usage
-1. Export ABR data using IHSPeakInfo.exe (default location C:\IHSPROGS\IHSPeakInfo.exe) and ensure the Extract Raw Data toggle is ticked.
-2. Run the IHS-to-EPL Converter application.
-3. Press 'Select files' and select the text file export of IHSPeakInfo (multiple files is supported).
-4. Set the highpass and lowpass cutoffs for the bandpass filtering.
-5. Set the filter order (-12 dB/octave per filter order).
-6. Press OK.
-7. Open the EPL ABR Peak Analysis software and ensure the Filter type is set to None to prevent double filtering of the ABRs.
-8. Load the newly created ABR files into the EPL ABR Peak Analysis software for analysis.
+1. Export ABR data using `IHSPeakInfo.exe` (default location: `C:\IHSPROGS\IHSPeakInfo.exe`). Ensure the **Extract Raw Data** option is enabled.
+2. Open the IHS-to-EPL Converter application.
+3. Click **Select files** and choose the exported text file(s) from IHSPeakInfo.
+4. Set the **highpass** and **lowpass** cutoffs for bandpass filtering.
+5. Specify the **filter order** (-12 dB/octave per order).
+6. Click **OK** to process the files.
+7. Open the EPL ABR Peak Analysis software and set **Filter type** to **None** to prevent double filtering.
+8. Load the converted ABR files into EPL ABR Peak Analysis for analysis.
 
-To test the application, you can download a sample dataset:
+### Sample Dataset
+To test the application, download a sample dataset:
 [Sample Data - Exported IHS SmartEP files.csv](https://github.com/thepyottlab/ASR-Inspect/blob/main/Sample%20Data%20-%20Kinder%20Scientific%20ASR%20Assay.csv)
