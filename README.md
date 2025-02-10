@@ -31,6 +31,8 @@ The converter applies a zero-phase second-order sections Butterworth bandpass fi
 7. Open the EPL ABR Peak Analysis software and set 'Filter type' to 'None' to prevent double filtering.
 8. Load the converted ABR files into EPL ABR Peak Analysis for analysis.
 
+On some devices, after saving and analyzing the ABR file with EPL ABR Peak Analysis when 'Auto restore analysis' is toggled and a previously analyzed file is opened, an error will occur. This is due to an issue in the format with which the threshold is stored. By running the tool that can be found in `C:\Program Files (x86)\IHS-to-EPL Converter\EPL_Extension_Fixer.exe` after installation and selecting the folder, the analysis files will be fixed. Running this tool will also fix the extension when the file extension is set as '.txt' in the ABR Peak Analysis software (i.e., this executable renames files that are stored as '..txt' to '.txt' and corrects the format of the threshold values).
+
 ### Sample Dataset
 To test the application, download a sample dataset:
 [Sample Data - IHSPeakInfo Export.TXT](https://github.com/thepyottlab/IHS-to-EPL-Converter/blob/main/Sample%20Data%20-%20IHSPeakInfo%20Export.TXT)
